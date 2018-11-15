@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [DataHelper.cs](./CS/App_Code/DataHelper.cs) (VB: [DataHelper.vb](./VB/App_Code/DataHelper.vb))
+* **[Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))**
+* [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx](./VB/Default.aspx))
+<!-- default file list end -->
 # How to use dxSparkline inside ASPxGridView Cells / DataItemTemplate
 
 
