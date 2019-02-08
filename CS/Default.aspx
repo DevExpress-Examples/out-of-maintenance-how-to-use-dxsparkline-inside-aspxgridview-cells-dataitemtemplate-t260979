@@ -4,10 +4,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <script src="lib/jquery-2.1.4.min.js"></script>
-    <script src="lib/knockout-3.3.0.js"></script>
-    <script src="lib/globalize.min.js"></script>
-    <script src="lib/dx.chartjs.js"></script>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/knockout-3.3.0.js"></script>
+    <script src="Scripts/globalize.min.js"></script>
+    <script src="Scripts/dx.chartjs.js"></script>
     <script type="text/javascript">
         var BaseSparklineOptions = {
             argumentField: 'Month',
