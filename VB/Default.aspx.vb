@@ -7,7 +7,7 @@ Partial Public Class _Default
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-        If Not IsCallback AndAlso Not IsPostBack Then
+        If (Not IsCallback) AndAlso (Not IsPostBack) Then
             grid.DataBind()
         End If
     End Sub

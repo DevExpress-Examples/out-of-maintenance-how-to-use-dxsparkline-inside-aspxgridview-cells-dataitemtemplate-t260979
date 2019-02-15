@@ -27,8 +27,8 @@ Public Class DataHelper
     End Property
     Public Shared Function GetSparklineItemsByYear(ByVal year As Integer) As IEnumerable
         Return From item In SparklineItems _
-            Where item.Year = year _
-            Select item
+               Where item.Year = year _
+               Select item
     End Function
     Private Shared Function GenerateGridItems() As List(Of YearInfo)
         Return New List(Of YearInfo) From { _
@@ -39,186 +39,42 @@ Public Class DataHelper
     End Function
     Private Shared Function GenerateSparklineItems() As List(Of OilCostInfo)
         Return New List(Of OilCostInfo) From { _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 1, _
-                .Value = 77 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 2, _
-                .Value = 72 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 3, _
-                .Value = 79 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 4, _
-                .Value = 82 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 5, _
-                .Value = 86 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 6, _
-                .Value = 73 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 7, _
-                .Value = 73 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 8, _
-                .Value = 77 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 9, _
-                .Value = 76 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 10, _
-                .Value = 81 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 11, _
-                .Value = 83 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2010, _
-                .Month = 12, _
-                .Value = 89 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 1, _
-                .Value = 93 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 2, _
-                .Value = 101 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 3, _
-                .Value = 115 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 4, _
-                .Value = 116 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 5, _
-                .Value = 124 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 6, _
-                .Value = 115 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 7, _
-                .Value = 110 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 8, _
-                .Value = 117 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 9, _
-                .Value = 113 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 10, _
-                .Value = 103 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 11, _
-                .Value = 110 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2011, _
-                .Month = 12, _
-                .Value = 109 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 1, _
-                .Value = 107 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 2, _
-                .Value = 112 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 3, _
-                .Value = 123 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 4, _
-                .Value = 123 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 5, _
-                .Value = 116 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 6, _
-                .Value = 102 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 7, _
-                .Value = 94 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 8, _
-                .Value = 105 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 9, _
-                .Value = 113 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 10, _
-                .Value = 111 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 11, _
-                .Value = 107 _
-            }, _
-            New OilCostInfo() With { _
-                .Year = 2012, _
-                .Month = 12, _
-                .Value = 110 _
-            } _
+            New OilCostInfo() With {.Year = 2010, .Month = 1, .Value = 77}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 2, .Value = 72}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 3, .Value = 79}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 4, .Value = 82}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 5, .Value = 86}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 6, .Value = 73}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 7, .Value = 73}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 8, .Value = 77}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 9, .Value = 76}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 10, .Value = 81}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 11, .Value = 83}, _
+            New OilCostInfo() With {.Year = 2010, .Month = 12, .Value = 89}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 1, .Value = 93}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 2, .Value = 101}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 3, .Value = 115}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 4, .Value = 116}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 5, .Value = 124}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 6, .Value = 115}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 7, .Value = 110}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 8, .Value = 117}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 9, .Value = 113}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 10, .Value = 103}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 11, .Value = 110}, _
+            New OilCostInfo() With {.Year = 2011, .Month = 12, .Value = 109}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 1, .Value = 107}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 2, .Value = 112}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 3, .Value = 123}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 4, .Value = 123}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 5, .Value = 116}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 6, .Value = 102}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 7, .Value = 94}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 8, .Value = 105}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 9, .Value = 113}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 10, .Value = 111}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 11, .Value = 107}, _
+            New OilCostInfo() With {.Year = 2012, .Month = 12, .Value = 110} _
         }
     End Function
 End Class
